@@ -6,21 +6,6 @@ h1 {
   text-align: center;
 }
 
-.progress-bar-background {
-  background-color: black;
-  height: 15px;
-  position: sticky;
-  top: 0;
-  /* left: 0; */
-  z-index: 1;
-  width: 100%;
-}
-
-.progress-bar {
-  height: 15px;
-  background-color: #00cc83;
-}
-
 .block-img-text {
   display: flex;
   justify-content: center;

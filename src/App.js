@@ -1,26 +1,8 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 
 export default function App() {
-  const [scrollTop, setScrollTop] = useState(0);
-
-  const onScroll = () => {
-    const topScrollingPosition = document.documentElement.scrollTop;
-    const hiddenHeight =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    setScrollTop((topScrollingPosition / hiddenHeight) * 100);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <div className="main-content">
-      <div className="progress-bar-background">
-        <div className="progress-bar" style={{ width: `${scrollTop}%` }}></div>
-      </div>
       <h1>Scrollons...</h1>
       <div className="block-img-text">
         <img
